@@ -4,6 +4,7 @@
 2.点击左右侧按钮实现图片切换
 3.自动轮播
 4.鼠标移入轮播图中时，自动轮播停止
+5.使用opacity实现轮播图淡入淡出
 */
 var contariner=document.querySelector('.carousel-inner');
 var pic=contariner.children;
@@ -25,9 +26,12 @@ function picSwitching(){
        for (var j=0;j<aBth.length;j++){
         aBth[j].className=''
         pic[j].style.display='none'
+        pic[j].style.opacity='0.5'
         }
         this.className='active'
         pic[index].style.display='block'
+        pic[index].style.opacity='1'
+        
         
         }
  }
@@ -69,13 +73,13 @@ prev.onclick=function(){
 var timer=null
 function auto(){
     timer=setInterval(function(){
-        next.onclick()
+        next.onclick();
     },3000)
    
 }  
 auto()
 //当鼠标移入到swiper容器里面的时候让自动轮播停止
-//为什么要追加到父元素身上才能实现停止效果
+//为什么要追加到父元素身上才能实现停止效果 contariner没有高度
 contariner.parentNode.onmouseover = function(){
     clearInterval(timer)
 }
@@ -83,15 +87,12 @@ contariner.parentNode.onmouseout = function(){
     auto()
 }
 //倒计时
-/*
-需求：
-*/ 
-var clock=document.querySelector('.clock')
+// var clock=document.querySelector('.clock')
 var hour=document.querySelector('.hour')
 var minute=document.querySelector('.minute')
 var second=document.querySelector('.second')
 console.log(hour,minute,second)
-var endDate=new Date('2021/12/17 00:00:00')
+var endDate=new Date('2021/12/31 00:00:00')
 djs()
 setInterval(djs,1000)
 function djs(){
@@ -115,4 +116,5 @@ function djs(){
 function complement(num){
     return num < 10 ? num = '0' + num : num
 }
+
 

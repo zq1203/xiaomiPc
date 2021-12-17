@@ -103,6 +103,22 @@
     border: 0;
     color: #ffffff;
 }
+.sy1{
+    color: #ccc;
+    font-size: 12px;
+}
+.sy2{
+    color: red;
+    font-size: 12px;
+}
+.sy3{
+    color:greenyellow;
+    font-size: 12px;
+}
+.banner-box-con span{
+    display: inline-block;
+    text-indent: 1em;
+}
 
 .login-btn a {
     display: block;

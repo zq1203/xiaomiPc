@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
-
+    
 </head>
 
 
@@ -38,14 +38,16 @@
                 <div class="banner-box-con">
                     <label for="username"></label>
                     <input class="txt" autocomplete="off" type="text" name="username" id="username" placeholder="邮箱/手机号码/小米ID">
+                    <span class="tips1"></span>
 
                     <label for="pwd"> </label>
                     <input class="txt1" type="password" placeholder="密码" autocomplete="off" id="pwd" name="password">
+                    <span class="tips2"></span>
                     <input type="submit" value="登陆账号" class="txt2" id="btn1">
                     <div class="login-btn-box">
                         <ul>
                             <li><a href="register.html">立即注册 </a> </li>
-                            <li class="spacers"><a href="#">|        </a> </li>
+                            <li class="spacers"><a href="#">|</a> </li>
                             <li><a href="#">忘记密码？ </a> </li>
                         </ul>
                     </div>
@@ -94,9 +96,11 @@
         </div>
 
     </div>
-    <script src="../js/jquery.min.js"></script>
-    <script>
-        $('#btn1').on('click', function() {
+    <script src="../js/login.js"></script>
+    <!-- <script src="../js/jquery.min.js"></script> -->
+    <!-- <script>
+   
+   document.querySelector('#btn1').on('click', function() {
             var username = $('#username').val();
             var password = $('#pwd').val();
             if (username.trim().length == 0) {
@@ -127,6 +131,15 @@
 
             })
         });
+     //获取节点方法
+     var $ = function (ele) {
+        return document.querySelector(ele)
+    }
+    var $$ = function (ele) {
+        return document.querySelectorAll(ele)
+    }
+    
+  -->
     </script>
 
 </body>
