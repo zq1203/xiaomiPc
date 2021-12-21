@@ -9,19 +9,20 @@
     <meta name="description"
         content="小米商城直营小米公司旗下所有产品，包括小米手机系列小米CC9、小米9、小米MIX 3，Redmi 红米系列Redmi K20 Pro、Redmi Note 8，小米电视、红米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持。" />
     <meta name="keywords" content="小米,小米9,小米cc9,Redmi K20,Redmi Note 8,小米MIX3,小米商城" />
-    <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" /> -->
     <!--    引入重置样式表-->
     <link rel="stylesheet" href="../css/reset.css">
     <!--    引入基础样式表-->
     <link rel="stylesheet" href="../css/base.css">
     <!--    引入当前页面的样式表-->
     <link rel="stylesheet" href="../css/getbuy.css">
-    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>9 -->
 
-    <script src="../js/holder.min.js"></script>
+    <!-- <script src="../js/holder.min.js"></script>
     <script src="../js/jquery-1.11.3.js"></script>
-    <script src="../js/jquery.cookie.js"></script>
-    <script>
+    <script src="../js/jquery.cookie.js"></script> -->
+    <!-- <script>
         $(function () {
 
             $(".box-big .w").on("click", ".buy-button", function () {
@@ -74,7 +75,7 @@
 
 
         })
-    </script>
+    </script> -->
 
 </head>
 
@@ -410,8 +411,8 @@
                     </li>
                 </ul>
 
-                <div class="btns" id="next"><i class="fa fa-arrow-right">&gt;</i></div>
-                <div class="btns" id="previous"><i class="fa fa-arrow-left">&lt;</i></div>
+                <div class="btns" id="next">&gt;</div>
+                <div class="btns" id="previous">&lt;</div>
 
                 <div id="pagination-wrap">
                     <ul>
@@ -433,16 +434,16 @@
                 </div>
                 <div class="getbuy-middle-box2">
                     <h4>选择颜色</h4>
-                    <span>陶瓷黑</span>
-                    <span>透明版</span>
-                    <span>亮银版</span>
+                    <span class="Color">陶瓷黑</span>
+                    <span class="Color">透明版</span>
+                    <span class="Color">亮银版</span>
 
                 </div>
                 <div class="getbuy-middle-box3">
                     <h4>选择版本</h4>
-                    <span>8G+256G</span>
-                    <span>8G+128G</span>
-                    <span>12G+256G</span>
+                    <span class="edition">8G+256G</span>
+                    <span class="edition">8G+128G</span>
+                    <span class="edition">12G+256G</span>
 
                 </div>
 
@@ -524,6 +525,7 @@
         </div>
     </div>
     <script src="../js/getbuy.js"></script>
+    
 </body>
 
 </html>

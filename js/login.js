@@ -14,10 +14,10 @@ var telReg = /^1[3-9]\d{9}$/;
 var pswReg =/[1-9]\d{4,10}/;
 // var email= '[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+';
 //用户名验证
-tel.onfous=()=>{
-    Tips1.innerHTML='请输入账号'
-    Tips1.className= 'sy1'
-}
+// tel.onfous=()=>{
+//     Tips1.innerHTML='请输入账号'
+//     Tips1.className= 'sy1'
+// }
 tel.onblur=()=>{
     if(telReg.test(tel.value)){
         Tips1.innerHTML='账号格式输入正确' 
@@ -41,16 +41,25 @@ Psw.onblur=()=>{
         Tips2.className= 'sy2'
     }
 }
-sub.onclick=function(){
-  if(( Tips2.className=='sy3') && (Tips1.className=='sy3' )){
-    //   console.log(1111)
-    var Tval=tel.value;
-    var Pval=Psw.value;
-    console.log(Tval,Pval)
+sub.onclick=function loginFn(){
+if(( Tips2.className=='sy3') && (Tips1.className=='sy3' )){
+let res=axios.get('http://localhost:3000/userinfo').then((res)=>{
+     let userDate=res.data;
+    //  console.log(userDate)
+    userDate.forEach(ele => {
+        // console.log(tel.value)
+        // console.log(ele.userAccount)
+        if((tel.value)==(ele.userAccount)&&(Psw.value)==(ele.password)){
+        //    alert('登录成功')
+        location.href='file:///D:/phpStudy/PHPTutorial/WWW/xiaoMiPc/html/index1.html'
+        }else{
+            alert('抱歉，您的信息有误，请确认后再登录')
+        }
+    });
     
-  }else{
-      return
-  }
-    
-  
+})
 }
+}
+
+ 
+  

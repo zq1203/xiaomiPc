@@ -1,7 +1,84 @@
 {
-    "userinfo":[
-        {
-            "id":1,"userAccount ":"17761405873","password":"2312031499"
-        }
-    ]
+  "userinfo": [
+    {
+      "id": 1,
+      "userAccount": "17761405873",
+      "password": "2312031499"
+    },
+    {
+      "id": 2,
+      "userAccount": "17761405884",
+      "password": "2312031588"
+    },
+    {
+      "id": 3,
+      "userAccount": "17761407584",
+      "password": "2312045873"
+    },
+    {
+      "userAccount": "17761405876",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "userAccount": "17158104455",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "userAccount": "17158105522",
+      "password": "2312031499",
+      "id": 6
+    }
+  ],
+  "goods":[
+    {
+      "id": 1,
+      "src": "../images/peijian_10.png",
+      "price": 1099.12,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 2,
+      "src": "../images/jiadian_08.png",
+      "price": 3599.00,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 3,
+      "src": "../images/jiadian_06.png",
+      "price": 3059.00,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 4,
+      "src": "../images/jiadian_09.png",
+      "price": 1099.00,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 5,
+      "src": "../images/jiadian_08.png",
+      "price": 3059.00,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 6,
+      "src": "../images/jiadian_06.png",
+      "price": 1099.00,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 7,
+      "src": "../images/jiadian_10.png",
+      "price": 3059.00,
+      "name": "Redmi红米电视70英寸"
+    },
+    {
+      "id": 8,
+      "src": "../images/jiadian_6.png",
+      "price": 1099.00,
+      "name": "Redmi红米电视70英寸"
+    }
+  ]
 }
